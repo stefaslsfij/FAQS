@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpectraxLab FAQs</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #00ff00;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0px 0px 10px #00ff00;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq-button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background-color: #1a1a1a;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .faq-button:hover {
+            background-color: #008000;
+            transform: scale(1.02);
+        }
+
+        .faq-content {
+            display: none;
+            padding: 10px;
+            background-color: #0d0d0d;
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            margin-top: 5px;
+            color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SpectraxLab FAQs</h1>
+        
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq1')">Are we legal?</button>
+            <div id="faq1" class="faq-content">
+                <p>Yes, SpectraxLab operates under Qatari law, specifically adhering to Law No. 13 of 2016 on the Protection of Personal Data and the Qatari Cybercrime Prevention Law. All our services are ethical and comply with local and international regulations.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq2')">Is payment safe?</button>
+            <div id="faq2" class="faq-content">
+                <p>Yes, all payments are securely processed through Square, a trusted payment platform that complies with Qatari financial regulations. Your transactions are safe and encrypted.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq3')">What services do we provide?</button>
+            <div id="faq3" class="faq-content">
+                <p>We provide penetration testing guides, hacking books, ethical IP search services, and OSINT for educational and ethical purposes only.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq4')">How do we ensure ethical use of services?</button>
+            <div id="faq4" class="faq-content">
+                <p>All customers must agree to our terms and conditions, which include strict adherence to ethical guidelines and compliance with applicable laws.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq5')">What if I have additional questions?</button>
+            <div id="faq5" class="faq-content">
+                <p>If you have further questions, feel free to contact us at spectraxcenter@gmail.com. Our team is always ready to assist you.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq6')">Can I cancel a service after agreeing?</button>
+            <div id="faq6" class="faq-content">
+                <p>Once you agree to our terms and conditions and a service has started, cancellations may not be possible. Please contact us for assistance regarding any specific situation.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq7')">Do we offer refunds?</button>
+            <div id="faq7" class="faq-content">
+                <p>Refunds are subject to the specific terms of the service purchased. Please refer to our refund policy outlined in the service agreement.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq8')">Can I share the material provided?</button>
+            <div id="faq8" class="faq-content">
+                <p>No, all materials provided are copyrighted and intended for personal use only. Sharing or distributing them without prior permission is strictly prohibited.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq9')">How can I trust your ethical practices?</button>
+            <div id="faq9" class="faq-content">
+                <p>We are committed to transparency and abide by strict internal policies and local regulations to ensure all services are performed ethically. Regular audits are conducted to maintain compliance.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-button" onclick="toggleFAQ('faq11')">What is the response time for support queries?</button>
+            <div id="faq11" class="faq-content">
+                <p>We aim to respond to all support queries within 24-48 hours. For urgent matters, please use the "urgent" tag in your email subject line.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(id) {
+            const faqContent = document.getElementById(id);
+            if (faqContent.style.display === "none" || faqContent.style.display === "") {
+                faqContent.style.display = "block";
+            } else {
+                faqContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
